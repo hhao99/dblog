@@ -1,0 +1,8 @@
+<h1>Blog Board!</h1>
+<h3>index page</h3>
+<div>
+    {% for post in posts %}
+        <h3>{{ post.title }}</h3>
+        <h5>By {{post.author.username}} at {{ post.created_at}}</h5>
+    {% endfor %}
+</div>
